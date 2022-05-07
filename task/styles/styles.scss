@@ -1,0 +1,258 @@
+@import "./normalize";
+
+* {
+  box-sizing: border-box;
+}
+
+.virtual-keyboard {
+  width: 100vw;
+
+  // .virtual-keyboard__wrapper
+
+  &__wrapper {
+    max-width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10%;
+  }
+
+  &__input {
+    width: 1300px;
+    textarea {
+      width: 1300px;
+    }
+  }
+  // .virtula-keyboard__keyboard
+  &__keyboard {
+    height: 100%;
+    width: 1300px;
+    background: #34566d;
+    border: 0.4px solid rgba(39, 54, 64, 0.26);
+    box-shadow: 0px 5px 10px rgba(9, 29, 68, 0.5),
+      0px 6px 10px 2px rgba(24, 73, 167, 0.2),
+      inset 0px 1px 1.2px 1px rgba(221, 231, 251, 0.7);
+    border-radius: 8px;
+  }
+
+  &__container {
+    width: 1275px;
+    margin: 10px;
+    background: #24333e;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0px 1px 1.2px 1px #2d2e31;
+    border-radius: 10px;
+  }
+
+  &__keys {
+    margin: 5px;
+  }
+
+  // .virtual-keyboard__keyboard--btn
+
+  &__keyboard--btn {
+    cursor: pointer;
+    position: relative;
+    width: 65px;
+    height: 65px;
+    background: #b3b3b3;
+    border: none;
+    border-radius: 10px;
+    margin: 5px;
+    filter: drop-shadow(0px 1px 1px rgba(255, 255, 255, 0.2));
+  }
+
+  // .virtual-keyboard__keyboard--btn--inner
+
+  &__keyboard--btn--inner {
+    position: absolute;
+    display: flex;
+    top: 3px;
+    width: 53px;
+    height: 53px;
+    background: #e2e2e2;
+    border-radius: 10px;
+    border: none;
+
+    flex-wrap: wrap;
+  }
+
+  // .virtual-keyboard__top
+
+  &__top,
+  &__bottom {
+    font-family: "Roboto Mono";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: #104096;
+
+    flex-grow: 1;
+    & p {
+      margin: 0;
+    }
+    width: 100%;
+  }
+
+  &__top {
+    text-align: left;
+    margin: 5px;
+  }
+
+  // .virtual-keyboard__bottom
+
+  &__bottom {
+    text-align: right;
+    margin: 5px;
+  }
+
+  // .virtual-keyboard__keyboard--first
+
+  &__keyboard--first {
+    & .backspace {
+      width: 146px;
+      background: #104096;
+      & .virtual-keyboard__keyboard--btn--inner {
+        background: #356a8f;
+        width: 134px;
+        & .virtual-keyboard__top {
+          text-transform: uppercase;
+          color: #e85f56;
+          text-align: right;
+        }
+      }
+    }
+  }
+
+  // .virtual-keyboard__keyboard--second
+
+  &__keyboard--second {
+    & .tab,
+    & .backslash {
+      width: 105px;
+      & .virtual-keyboard__keyboard--btn--inner {
+        width: 92px;
+      }
+    }
+  }
+
+  // .virtual-keyboard__keyboard--third
+
+  &__keyboard--third {
+    & .caps {
+      width: 135px;
+      & .virtual-keyboard__keyboard--btn--inner {
+        width: 122px;
+      }
+    }
+    & .enter {
+      width: 155px;
+      & .virtual-keyboard__keyboard--btn--inner {
+        width: 142px;
+      }
+    }
+  }
+
+  // .virtual-keyboard__keyboard--fourth
+
+  &__keyboard--fourth {
+    & .shift-left {
+      width: 170px;
+      & .virtual-keyboard__keyboard--btn--inner {
+        width: 157px;
+      }
+    }
+
+    & .shift-right {
+      width: 120px;
+      & .virtual-keyboard__keyboard--btn--inner {
+        width: 107px;
+      }
+    }
+
+    & .arrow-up {
+      & .virtual-keyboard__top {
+        text-align: center;
+        img {
+          width: 20px;
+        }
+      }
+    }
+  }
+
+  // .virtual-keyboard__keyboard--fifth
+
+  &__keyboard--fifth {
+    & .space {
+      width: 541px;
+    }
+    & .arrow-left,
+    & .arrow-down,
+    & .arrow-right {
+      & .virtual-keyboard__top {
+        text-align: center;
+        img {
+          width: 20px;
+        }
+      }
+    }
+
+    & .arrow-left {
+      & .virtual-keyboard__top {
+        transform: rotate(-90deg);
+      }
+    }
+
+    & .arrow-down {
+      & .virtual-keyboard__top {
+        transform: rotate(-180deg);
+      }
+    }
+
+    & .arrow-right {
+      & .virtual-keyboard__top {
+        transform: rotate(-270deg);
+      }
+    }
+  }
+}
+
+.tab,
+.shift-left,
+.shift-right,
+.ctrl-left,
+.ctrl-right,
+.win-left,
+.win-right,
+.alt-left,
+.alt-right,
+.shift-left,
+.shift-right,
+.del,
+.home,
+.end,
+.backspace {
+  background: #104096;
+  & .virtual-keyboard__keyboard--btn--inner {
+    background: #356a8f;
+    & .virtual-keyboard__top,
+    & .virtual-keyboard__button {
+      color: #e85f56;
+    }
+  }
+}
+
+.caps,
+.space,
+.arrow-left,
+.arrow-right,
+.arrow-down,
+.arrow-up,
+.enter {
+  background: #e85f56;
+  & .virtual-keyboard__keyboard--btn--inner {
+    background: #ff6c4b;
+  }
+}
