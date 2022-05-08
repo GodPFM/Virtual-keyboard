@@ -346,6 +346,13 @@ template {
           box-sizing: border-box;
 }
 
+body {
+  width: 100vw;
+  height: 100vh;
+  background: url(../../assets/Keyboard.jpg);
+  overflow: hidden;
+}
+
 .virtual-keyboard {
   width: 100vw;
 }
@@ -407,6 +414,11 @@ template {
   margin: 5px;
   -webkit-filter: drop-shadow(0px 1px 1px rgba(255, 255, 255, 0.2));
           filter: drop-shadow(0px 1px 1px rgba(255, 255, 255, 0.2));
+}
+
+.virtual-keyboard__keyboard--btn.click {
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
 }
 
 .virtual-keyboard__keyboard--btn--inner {
@@ -519,6 +531,10 @@ template {
 
 .virtual-keyboard__keyboard--fifth .space {
   width: 541px;
+}
+
+.virtual-keyboard__keyboard--fifth .space .virtual-keyboard__keyboard--btn--inner {
+  width: 528px;
 }
 
 .virtual-keyboard__keyboard--fifth .arrow-left .virtual-keyboard__top,
