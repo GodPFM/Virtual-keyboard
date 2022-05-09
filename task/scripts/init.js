@@ -1034,7 +1034,7 @@ for (let i = 0; i < listOfButtons.length; i += 1) {
     if (el.classList.contains('arrow-up')) {
       inputForm.value += '⮝';
     }
-    if (el.classList.contains('arrow-right')) {
+    if (el.classList.contains('arrow-down')) {
       inputForm.value += '⮟';
     }
   });
