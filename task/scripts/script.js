@@ -10,15 +10,20 @@ for (let i = 0; i < listOfButtons.length; i++) {
   });
   el.addEventListener("click", () => {
     currentSymbol = el.id;
+
+    if (el.classList.contains("tab")) {
+      inputForm.value += "\t";
+    }
+    if (el.classList.contains("enter")) {
+      inputForm.value += "\n";
+    }
+
     if (el.classList.contains("caps")) {
       caps = !caps;
       shift = caps;
     }
     if (el.classList.contains("backspace")) {
-      inputForm.textContent = inputForm.textContent.slice(
-        0,
-        inputForm.textContent.length - 1
-      );
+      inputForm.value = inputForm.value.slice(0, inputForm.value.length - 1);
     }
     if (
       el.classList.contains("shift-left") ||
@@ -27,7 +32,9 @@ for (let i = 0; i < listOfButtons.length; i++) {
       shift = !shift;
       if (shift) {
         el.classList.add("click");
+        el.querySelector(".virtual-keyboard__bottom").classList.add("press");
       } else {
+        el.querySelector(".virtual-keyboard__bottom").classList.remove("press");
         el.classList.remove("click");
       }
     }
@@ -35,21 +42,12 @@ for (let i = 0; i < listOfButtons.length; i++) {
       if (shift == false) {
         let symbol = el.getAttribute("data-text-unshift-en");
         if (symbol != null) {
-          inputForm.textContent += symbol;
+          inputForm.value += symbol;
         }
       } else {
         let symbol = el.getAttribute("data-text-shift-en");
         if (symbol != null) {
-          inputForm.textContent += symbol;
-        }
-        if (
-          caps == false &&
-          symbol != null &&
-          !el.classList.contains("space")
-        ) {
-          shift = false;
-          document.querySelector(".shift-left").classList.remove("click");
-          document.querySelector(".shift-right").classList.remove("click");
+          inputForm.value += symbol;
         }
       }
     }
@@ -57,35 +55,24 @@ for (let i = 0; i < listOfButtons.length; i++) {
       if (shift == false) {
         let symbol = el.getAttribute("data-text-unshift-ru");
         if (symbol != null) {
-          inputForm.textContent += symbol;
+          inputForm.value += symbol;
         }
       } else {
         let symbol = el.getAttribute("data-text-shift-ru");
         if (symbol != null) {
-          inputForm.textContent += symbol;
-        }
-        if (
-          (caps == false &&
-            symbol != null &&
-            !el.classList.contains("space")) ||
-          currentSymbol == "alt-left" ||
-          currentSymbol == "alt-right"
-        ) {
-          shift = false;
-          document.querySelector(".shift-left").classList.remove("click");
-          document.querySelector(".shift-right").classList.remove("click");
+          inputForm.value += symbol;
         }
       }
     }
     if (
-      (previousSymbol == "shift-left" || previousSymbol == "shift-right") &&
-      currentSymbol == "alt-left" ||
-      currentSymbol == "alt-right"
+      ((previousSymbol == "shiftleft" || previousSymbol == "shiftright") &&
+        currentSymbol == "altleft") ||
+      currentSymbol == "altright"
     ) {
-      if (lang == 'en') {
-        lang = 'ru'
+      if (lang == "en") {
+        lang = "ru";
       } else {
-        lang = 'en';
+        lang = "en";
       }
       switchLanguage();
     }

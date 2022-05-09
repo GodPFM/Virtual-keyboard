@@ -414,11 +414,15 @@ body {
   margin: 5px;
   -webkit-filter: drop-shadow(0px 1px 1px rgba(255, 255, 255, 0.2));
           filter: drop-shadow(0px 1px 1px rgba(255, 255, 255, 0.2));
+  -webkit-transition: 0.02s ease-in-out;
+  transition: 0.02s ease-in-out;
 }
 
 .virtual-keyboard__keyboard--btn.click {
   -webkit-transform: translateY(5px);
           transform: translateY(5px);
+  -webkit-transition: 0.02s ease-in-out;
+  transition: 0.02s ease-in-out;
 }
 
 .virtual-keyboard__keyboard--btn--inner {
@@ -513,12 +517,34 @@ body {
   width: 157px;
 }
 
+.virtual-keyboard__keyboard--fourth .shift-left .virtual-keyboard__keyboard--btn--inner .virtual-keyboard__bottom {
+  max-width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #2e2e2e;
+}
+
+.virtual-keyboard__keyboard--fourth .shift-left .virtual-keyboard__keyboard--btn--inner .virtual-keyboard__bottom.press {
+  background-color: red;
+}
+
 .virtual-keyboard__keyboard--fourth .shift-right {
   width: 120px;
 }
 
 .virtual-keyboard__keyboard--fourth .shift-right .virtual-keyboard__keyboard--btn--inner {
   width: 107px;
+}
+
+.virtual-keyboard__keyboard--fourth .shift-right .virtual-keyboard__keyboard--btn--inner .virtual-keyboard__bottom {
+  max-width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #2e2e2e;
+}
+
+.virtual-keyboard__keyboard--fourth .shift-right .virtual-keyboard__keyboard--btn--inner .virtual-keyboard__bottom.press {
+  background-color: red;
 }
 
 .virtual-keyboard__keyboard--fourth .arrow-up .virtual-keyboard__top {

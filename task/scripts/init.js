@@ -169,7 +169,7 @@ document.body.innerHTML = `<main>
             </button>
             <button
               class="virtual-keyboard__keyboard--btn plus"
-              id="plus"
+              id="equal"
               data-text-unshift-en="="
               data-text-shift-en="+"
               data-text-unshift-ru="="
@@ -191,7 +191,7 @@ document.body.innerHTML = `<main>
             </button>
             <button
               class="virtual-keyboard__keyboard--btn tilda"
-              id="tilda"
+              id="backquote"
               data-text-unshift-en="&#96;"
               data-text-shift-en="~"
               data-text-unshift-ru="ё"
@@ -342,7 +342,7 @@ document.body.innerHTML = `<main>
             </button>
             <button
               class="virtual-keyboard__keyboard--btn ["
-              id="["
+              id="bracketleft"
               data-text-unshift-en="["
               data-text-shift-en="{"
               data-text-unshift-ru="х"
@@ -355,7 +355,7 @@ document.body.innerHTML = `<main>
             </button>
             <button
               class="virtual-keyboard__keyboard--btn ]"
-              id="]"
+              id="bracketright"
               data-text-unshift-en="]"
               data-text-shift-en="}"
               data-text-unshift-ru="ъ"
@@ -379,7 +379,7 @@ document.body.innerHTML = `<main>
                 <div class="virtual-keyboard__bottom">&#92;</div>
               </div>
             </button>
-            <button class="virtual-keyboard__keyboard--btn del" id="del">
+            <button class="virtual-keyboard__keyboard--btn del" id="delete">
               <div class="virtual-keyboard__keyboard--btn--inner">
                 <div class="virtual-keyboard__top">DEL</div>
                 <div class="virtual-keyboard__bottom"></div>
@@ -389,7 +389,7 @@ document.body.innerHTML = `<main>
           <div class="virtual-keyboard__keyboard--third">
             <button
               class="virtual-keyboard__keyboard--btn caps"
-              id="caps"
+              id="capslock"
             >
               <div class="virtual-keyboard__keyboard--btn--inner">
                 <div class="virtual-keyboard__top">CAPS LOCK</div>
@@ -515,7 +515,7 @@ document.body.innerHTML = `<main>
             </button>
             <button
               class="virtual-keyboard__keyboard--btn ;"
-              id=";"
+              id="semicolon"
               data-text-unshift-en=";"
               data-text-shift-en=":"
               data-text-unshift-ru="ж"
@@ -528,7 +528,7 @@ document.body.innerHTML = `<main>
             </button>
             <button
               class="virtual-keyboard__keyboard--btn '"
-              id="'"
+              id="quote"              "
               data-text-unshift-en="&#39;"
               data-text-shift-en="&#34;"
               data-text-unshift-ru="э"
@@ -561,7 +561,7 @@ document.body.innerHTML = `<main>
           <div class="virtual-keyboard__keyboard--fourth">
             <button
               class="virtual-keyboard__keyboard--btn shift-left"
-              id="shift-left"
+              id="shiftleft"
             >
               <div class="virtual-keyboard__keyboard--btn--inner">
                 <div class="virtual-keyboard__top">SHIFT</div>
@@ -661,7 +661,7 @@ document.body.innerHTML = `<main>
             </button>
             <button
               class="virtual-keyboard__keyboard--btn ,"
-              id=","
+              id="comma"
               data-text-unshift-en=","
               data-text-shift-en="<"
               data-text-unshift-ru="б"
@@ -674,7 +674,7 @@ document.body.innerHTML = `<main>
             </button>
             <button
               class="virtual-keyboard__keyboard--btn ."
-              id="."
+              id="period"
               data-text-unshift-en="."
               data-text-shift-en=">"
               data-text-unshift-ru="ю"
@@ -687,7 +687,7 @@ document.body.innerHTML = `<main>
             </button>
             <button
               class="virtual-keyboard__keyboard--btn /"
-              id="/"
+              id="slash"
               data-text-unshift-en="/"
               data-text-shift-en="?"
               data-text-unshift-ru="."
@@ -700,7 +700,7 @@ document.body.innerHTML = `<main>
             </button>
             <button
               class="virtual-keyboard__keyboard--btn shift-right"
-              id="shift-right"
+              id="shiftright"
             >
               <div class="virtual-keyboard__keyboard--btn--inner">
                 <div class="virtual-keyboard__top">SHIFT</div>
@@ -709,7 +709,7 @@ document.body.innerHTML = `<main>
             </button>
             <button
               class="virtual-keyboard__keyboard--btn arrow-up"
-              id="arrow-up"
+              id="arrowup"
             >
               <div class="virtual-keyboard__keyboard--btn--inner">
                 <div class="virtual-keyboard__top">
@@ -728,7 +728,7 @@ document.body.innerHTML = `<main>
           <div class="virtual-keyboard__keyboard--fifth">
             <button
               class="virtual-keyboard__keyboard--btn ctrl-left"
-              id="ctrl-left"
+              id="controlleft"
             >
               <div class="virtual-keyboard__keyboard--btn--inner">
                 <div class="virtual-keyboard__top">CTRL</div>
@@ -737,7 +737,7 @@ document.body.innerHTML = `<main>
             </button>
             <button
               class="virtual-keyboard__keyboard--btn win-left"
-              id="win-left"
+              id="metaleft"
             >
               <div class="virtual-keyboard__keyboard--btn--inner">
                 <div class="virtual-keyboard__top">WIN</div>
@@ -746,7 +746,7 @@ document.body.innerHTML = `<main>
             </button>
             <button
               class="virtual-keyboard__keyboard--btn alt-left"
-              id="alt-left"
+              id="altleft"
             >
               <div class="virtual-keyboard__keyboard--btn--inner">
                 <div class="virtual-keyboard__top">ALT</div>
@@ -768,7 +768,7 @@ document.body.innerHTML = `<main>
             </button>
             <button
               class="virtual-keyboard__keyboard--btn ctrl-right"
-              id="ctrl-right"
+              id="controlright"
             >
               <div class="virtual-keyboard__keyboard--btn--inner">
                 <div class="virtual-keyboard__top">CTRL</div>
@@ -777,7 +777,7 @@ document.body.innerHTML = `<main>
             </button>
             <button
               class="virtual-keyboard__keyboard--btn win-right"
-              id="win-right"
+              id="contextmenu"
             >
               <div class="virtual-keyboard__keyboard--btn--inner">
                 <div class="virtual-keyboard__top">WIN</div>
@@ -786,7 +786,7 @@ document.body.innerHTML = `<main>
             </button>
             <button
               class="virtual-keyboard__keyboard--btn alt-right"
-              id="alt-right"
+              id="altright"
             >
               <div class="virtual-keyboard__keyboard--btn--inner">
                 <div class="virtual-keyboard__top">ALT</div>
@@ -795,7 +795,7 @@ document.body.innerHTML = `<main>
             </button>
             <button
               class="virtual-keyboard__keyboard--btn arrow-left"
-              id="arrow-left"
+              id="arrowleft"
             >
               <div class="virtual-keyboard__keyboard--btn--inner">
                 <div class="virtual-keyboard__top">
@@ -806,7 +806,7 @@ document.body.innerHTML = `<main>
             </button>
             <button
               class="virtual-keyboard__keyboard--btn arrow-down"
-              id="arrow-down"
+              id="arrowdown"
             >
               <div class="virtual-keyboard__keyboard--btn--inner">
                 <div class="virtual-keyboard__top">
@@ -817,7 +817,7 @@ document.body.innerHTML = `<main>
             </button>
             <button
               class="virtual-keyboard__keyboard--btn arrow-right"
-              id="arrow-right"
+              id="arrowright"
             >
               <div class="virtual-keyboard__keyboard--btn--inner">
                 <div class="virtual-keyboard__top">
