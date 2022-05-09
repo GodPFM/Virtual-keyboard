@@ -501,6 +501,17 @@ body {
   width: 122px;
 }
 
+.virtual-keyboard__keyboard--third .caps .virtual-keyboard__keyboard--btn--inner .virtual-keyboard__bottom {
+  max-width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #2e2e2e;
+}
+
+.virtual-keyboard__keyboard--third .caps .virtual-keyboard__keyboard--btn--inner .virtual-keyboard__bottom.press {
+  background-color: green;
+}
+
 .virtual-keyboard__keyboard--third .enter {
   width: 155px;
 }
@@ -677,4 +688,18 @@ body {
 .arrow-up .virtual-keyboard__keyboard--btn--inner,
 .enter .virtual-keyboard__keyboard--btn--inner {
   background: #ff6c4b;
+}
+
+.information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Roboto Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
 }

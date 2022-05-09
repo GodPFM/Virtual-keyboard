@@ -903,6 +903,11 @@ document.body.addEventListener('keyup', (e) => {
 function changeCaps() {
   caps = !caps;
   shift = caps;
+  if (caps) {
+    document.querySelector('.caps .virtual-keyboard__bottom').classList.add('press');
+  } else {
+    document.querySelector('.caps .virtual-keyboard__bottom').classList.remove('press');
+  }
 }
 
 function addSymbol(element) {
@@ -1019,10 +1024,5 @@ for (let i = 0; i < listOfButtons.length; i += 1) {
     if (el.classList.contains('arrow-right')) {
       inputForm.value += '⮟';
     }
-    //   || el.classList.contains('arrow-down')
-    //   || el.classList.contains('arrow-right')
-    //   || el.classList.contains('arrow-up')) {
-      
-    // }
   });
 }

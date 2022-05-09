@@ -157,6 +157,15 @@ body {
       width: 135px;
       & .virtual-keyboard__keyboard--btn--inner {
         width: 122px;
+        & .virtual-keyboard__bottom {
+          max-width: 5px;
+          height: 5px;
+          border-radius: 50%;
+          background-color: #2e2e2e;
+          &.press {
+            background-color: green;
+          }
+        }
       }
     }
     & .enter {
@@ -289,4 +298,14 @@ body {
   & .virtual-keyboard__keyboard--btn--inner {
     background: #ff6c4b;
   }
+}
+
+.information {
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
 }
