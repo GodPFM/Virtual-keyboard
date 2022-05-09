@@ -7,7 +7,6 @@ if (localStorage.getItem('language') === null) {
   lang = localStorage.getItem('language');
 }
 
-
 let shift = false;
 let caps = false;
 
