@@ -2,6 +2,7 @@ let lang;
 
 if (localStorage.getItem('language') === null) {
   lang = 'en';
+  localStorage.setItem('language', lang);
 } else {
   lang = localStorage.getItem('language');
 }
