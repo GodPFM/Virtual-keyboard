@@ -1,12 +1,4 @@
-let lang;
-
-if (localStorage.getItem('language') === null) {
-  lang = 'en';
-} else {
-  lang = localStorage.getItem('language');
-}
-
-
+let lang = 'ru';
 let shift = false;
 let caps = false;
 
@@ -1002,7 +994,6 @@ function changeLang(element) {
     } else {
       lang = 'en';
     }
-    localStorage.setItem('language', lang);
   }
   switchLanguage();
   previousSymbol = element.id;
