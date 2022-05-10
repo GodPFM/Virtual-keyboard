@@ -1,0 +1,705 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: url(../../assets/Keyboard.jpg);
+  overflow: hidden;
+}
+
+.virtual-keyboard {
+  width: 100vw;
+}
+
+.virtual-keyboard__wrapper {
+  max-width: 95%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 10%;
+}
+
+.virtual-keyboard__input {
+  width: 1300px;
+}
+
+.virtual-keyboard__input textarea {
+  width: 1300px;
+}
+
+.virtual-keyboard__keyboard {
+  height: 100%;
+  width: 1300px;
+  background: #34566d;
+  border: 0.4px solid rgba(39, 54, 64, 0.26);
+  -webkit-box-shadow: 0px 5px 10px rgba(9, 29, 68, 0.5), 0px 6px 10px 2px rgba(24, 73, 167, 0.2), inset 0px 1px 1.2px 1px rgba(221, 231, 251, 0.7);
+          box-shadow: 0px 5px 10px rgba(9, 29, 68, 0.5), 0px 6px 10px 2px rgba(24, 73, 167, 0.2), inset 0px 1px 1.2px 1px rgba(221, 231, 251, 0.7);
+  border-radius: 8px;
+}
+
+.virtual-keyboard__container {
+  width: 1275px;
+  margin: 10px;
+  background: #24333e;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset 0px 1px 1.2px 1px #2d2e31;
+          box-shadow: inset 0px 1px 1.2px 1px #2d2e31;
+  border-radius: 10px;
+}
+
+.virtual-keyboard__keys {
+  margin: 5px;
+}
+
+.virtual-keyboard__keyboard--btn {
+  cursor: pointer;
+  position: relative;
+  width: 65px;
+  height: 65px;
+  background: #b3b3b3;
+  border: none;
+  border-radius: 10px;
+  margin: 5px;
+  -webkit-filter: drop-shadow(0px 1px 1px rgba(255, 255, 255, 0.2));
+          filter: drop-shadow(0px 1px 1px rgba(255, 255, 255, 0.2));
+  -webkit-transition: 0.02s ease-in-out;
+  transition: 0.02s ease-in-out;
+}
+
+.virtual-keyboard__keyboard--btn.click {
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+  -webkit-transition: 0.02s ease-in-out;
+  transition: 0.02s ease-in-out;
+}
+
+.virtual-keyboard__keyboard--btn--inner {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 3px;
+  width: 53px;
+  height: 53px;
+  background: #e2e2e2;
+  border-radius: 10px;
+  border: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.virtual-keyboard__top, .virtual-keyboard__bottom {
+  font-family: "Roboto Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: #104096;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: 100%;
+}
+
+.virtual-keyboard__top p, .virtual-keyboard__bottom p {
+  margin: 0;
+}
+
+.virtual-keyboard__top {
+  text-align: left;
+  margin: 5px;
+}
+
+.virtual-keyboard__bottom {
+  text-align: right;
+  margin: 5px;
+}
+
+.virtual-keyboard__keyboard--first .backspace {
+  width: 146px;
+  background: #104096;
+}
+
+.virtual-keyboard__keyboard--first .backspace .virtual-keyboard__keyboard--btn--inner {
+  background: #356a8f;
+  width: 134px;
+}
+
+.virtual-keyboard__keyboard--first .backspace .virtual-keyboard__keyboard--btn--inner .virtual-keyboard__top {
+  text-transform: uppercase;
+  color: #e85f56;
+  text-align: right;
+}
+
+.virtual-keyboard__keyboard--second .tab,
+.virtual-keyboard__keyboard--second .backslash {
+  width: 105px;
+}
+
+.virtual-keyboard__keyboard--second .tab .virtual-keyboard__keyboard--btn--inner,
+.virtual-keyboard__keyboard--second .backslash .virtual-keyboard__keyboard--btn--inner {
+  width: 92px;
+}
+
+.virtual-keyboard__keyboard--third .caps {
+  width: 135px;
+}
+
+.virtual-keyboard__keyboard--third .caps .virtual-keyboard__keyboard--btn--inner {
+  width: 122px;
+}
+
+.virtual-keyboard__keyboard--third .caps .virtual-keyboard__keyboard--btn--inner .virtual-keyboard__bottom {
+  max-width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #2e2e2e;
+}
+
+.virtual-keyboard__keyboard--third .caps .virtual-keyboard__keyboard--btn--inner .virtual-keyboard__bottom.press {
+  background-color: green;
+}
+
+.virtual-keyboard__keyboard--third .enter {
+  width: 155px;
+}
+
+.virtual-keyboard__keyboard--third .enter .virtual-keyboard__keyboard--btn--inner {
+  width: 142px;
+}
+
+.virtual-keyboard__keyboard--fourth .shift-left {
+  width: 170px;
+}
+
+.virtual-keyboard__keyboard--fourth .shift-left .virtual-keyboard__keyboard--btn--inner {
+  width: 157px;
+}
+
+.virtual-keyboard__keyboard--fourth .shift-left .virtual-keyboard__keyboard--btn--inner .virtual-keyboard__bottom {
+  max-width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #2e2e2e;
+}
+
+.virtual-keyboard__keyboard--fourth .shift-left .virtual-keyboard__keyboard--btn--inner .virtual-keyboard__bottom.press {
+  background-color: red;
+}
+
+.virtual-keyboard__keyboard--fourth .shift-right {
+  width: 120px;
+}
+
+.virtual-keyboard__keyboard--fourth .shift-right .virtual-keyboard__keyboard--btn--inner {
+  width: 107px;
+}
+
+.virtual-keyboard__keyboard--fourth .shift-right .virtual-keyboard__keyboard--btn--inner .virtual-keyboard__bottom {
+  max-width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #2e2e2e;
+}
+
+.virtual-keyboard__keyboard--fourth .shift-right .virtual-keyboard__keyboard--btn--inner .virtual-keyboard__bottom.press {
+  background-color: red;
+}
+
+.virtual-keyboard__keyboard--fourth .arrow-up .virtual-keyboard__top {
+  text-align: center;
+}
+
+.virtual-keyboard__keyboard--fourth .arrow-up .virtual-keyboard__top img {
+  width: 20px;
+}
+
+.virtual-keyboard__keyboard--fifth .space {
+  width: 541px;
+}
+
+.virtual-keyboard__keyboard--fifth .space .virtual-keyboard__keyboard--btn--inner {
+  width: 528px;
+}
+
+.virtual-keyboard__keyboard--fifth .arrow-left .virtual-keyboard__top,
+.virtual-keyboard__keyboard--fifth .arrow-down .virtual-keyboard__top,
+.virtual-keyboard__keyboard--fifth .arrow-right .virtual-keyboard__top {
+  text-align: center;
+}
+
+.virtual-keyboard__keyboard--fifth .arrow-left .virtual-keyboard__top img,
+.virtual-keyboard__keyboard--fifth .arrow-down .virtual-keyboard__top img,
+.virtual-keyboard__keyboard--fifth .arrow-right .virtual-keyboard__top img {
+  width: 20px;
+}
+
+.virtual-keyboard__keyboard--fifth .arrow-left .virtual-keyboard__top {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.virtual-keyboard__keyboard--fifth .arrow-down .virtual-keyboard__top {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.virtual-keyboard__keyboard--fifth .arrow-right .virtual-keyboard__top {
+  -webkit-transform: rotate(-270deg);
+          transform: rotate(-270deg);
+}
+
+.tab,
+.shift-left,
+.shift-right,
+.ctrl-left,
+.ctrl-right,
+.win-left,
+.win-right,
+.alt-left,
+.alt-right,
+.shift-left,
+.shift-right,
+.del,
+.home,
+.end,
+.backspace {
+  background: #104096;
+}
+
+.tab .virtual-keyboard__keyboard--btn--inner,
+.shift-left .virtual-keyboard__keyboard--btn--inner,
+.shift-right .virtual-keyboard__keyboard--btn--inner,
+.ctrl-left .virtual-keyboard__keyboard--btn--inner,
+.ctrl-right .virtual-keyboard__keyboard--btn--inner,
+.win-left .virtual-keyboard__keyboard--btn--inner,
+.win-right .virtual-keyboard__keyboard--btn--inner,
+.alt-left .virtual-keyboard__keyboard--btn--inner,
+.alt-right .virtual-keyboard__keyboard--btn--inner,
+.shift-left .virtual-keyboard__keyboard--btn--inner,
+.shift-right .virtual-keyboard__keyboard--btn--inner,
+.del .virtual-keyboard__keyboard--btn--inner,
+.home .virtual-keyboard__keyboard--btn--inner,
+.end .virtual-keyboard__keyboard--btn--inner,
+.backspace .virtual-keyboard__keyboard--btn--inner {
+  background: #356a8f;
+}
+
+.tab .virtual-keyboard__keyboard--btn--inner .virtual-keyboard__top,
+.tab .virtual-keyboard__keyboard--btn--inner .virtual-keyboard__button,
+.shift-left .virtual-keyboard__keyboard--btn--inner .virtual-keyboard__top,
+.shift-left .virtual-keyboard__keyboard--btn--inner .virtual-keyboard__button,
+.shift-right .virtual-keyboard__keyboard--btn--inner .virtual-keyboard__top,
+.shift-right .virtual-keyboard__keyboard--btn--inner .virtual-keyboard__button,
+.ctrl-left .virtual-keyboard__keyboard--btn--inner .virtual-keyboard__top,
+.ctrl-left .virtual-keyboard__keyboard--btn--inner .virtual-keyboard__button,
+.ctrl-right .virtual-keyboard__keyboard--btn--inner .virtual-keyboard__top,
+.ctrl-right .virtual-keyboard__keyboard--btn--inner .virtual-keyboard__button,
+.win-left .virtual-keyboard__keyboard--btn--inner .virtual-keyboard__top,
+.win-left .virtual-keyboard__keyboard--btn--inner .virtual-keyboard__button,
+.win-right .virtual-keyboard__keyboard--btn--inner .virtual-keyboard__top,
+.win-right .virtual-keyboard__keyboard--btn--inner .virtual-keyboard__button,
+.alt-left .virtual-keyboard__keyboard--btn--inner .virtual-keyboard__top,
+.alt-left .virtual-keyboard__keyboard--btn--inner .virtual-keyboard__button,
+.alt-right .virtual-keyboard__keyboard--btn--inner .virtual-keyboard__top,
+.alt-right .virtual-keyboard__keyboard--btn--inner .virtual-keyboard__button,
+.shift-left .virtual-keyboard__keyboard--btn--inner .virtual-keyboard__top,
+.shift-left .virtual-keyboard__keyboard--btn--inner .virtual-keyboard__button,
+.shift-right .virtual-keyboard__keyboard--btn--inner .virtual-keyboard__top,
+.shift-right .virtual-keyboard__keyboard--btn--inner .virtual-keyboard__button,
+.del .virtual-keyboard__keyboard--btn--inner .virtual-keyboard__top,
+.del .virtual-keyboard__keyboard--btn--inner .virtual-keyboard__button,
+.home .virtual-keyboard__keyboard--btn--inner .virtual-keyboard__top,
+.home .virtual-keyboard__keyboard--btn--inner .virtual-keyboard__button,
+.end .virtual-keyboard__keyboard--btn--inner .virtual-keyboard__top,
+.end .virtual-keyboard__keyboard--btn--inner .virtual-keyboard__button,
+.backspace .virtual-keyboard__keyboard--btn--inner .virtual-keyboard__top,
+.backspace .virtual-keyboard__keyboard--btn--inner .virtual-keyboard__button {
+  color: #e85f56;
+}
+
+.caps,
+.space,
+.arrow-left,
+.arrow-right,
+.arrow-down,
+.arrow-up,
+.enter {
+  background: #e85f56;
+}
+
+.caps .virtual-keyboard__keyboard--btn--inner,
+.space .virtual-keyboard__keyboard--btn--inner,
+.arrow-left .virtual-keyboard__keyboard--btn--inner,
+.arrow-right .virtual-keyboard__keyboard--btn--inner,
+.arrow-down .virtual-keyboard__keyboard--btn--inner,
+.arrow-up .virtual-keyboard__keyboard--btn--inner,
+.enter .virtual-keyboard__keyboard--btn--inner {
+  background: #ff6c4b;
+}
+
+.information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Roboto Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+}
